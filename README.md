@@ -35,6 +35,31 @@ Note, however, a couple of limitations:
 * speaker information are implemented for Sophocles (all) and for some Aeschylus
 * as I have taken the speakers from the TEI editions on the Perseus Digital Library, the characters's names are in Greek!
 
+## How do I install it?
+Clone the project or donwload the file with the data dump: `data/graph.db.dump`.
+
+You will need to have Neo4j installed on your machine (either your local computer or a server) to load this data and start
+using the gAGDT. Refer to the [instructions](https://neo4j.com/docs/operations-manual/current/installation/) on Neo4j's 
+website to lear how to install it on your OS. Regular distributions of the software (i.e not the enterprise version) is enough.
+
+On Debian and Debian-based distributions (e.g Ubuntu) it is as easy as:
+```bash
+sudo apt-get install neo4j
+``` 
+
+Mac OS and Windows have desktop applications that you can use also to start up the DB once it is intalled.
+
+Note, however, that Java 8 is required to run Neo4j. If you're in Linux, instructions on how to install it in Linux (and how to configure your 
+default Java version so that Java 8 is used) are also found at the above link.
+
+Once that Neo4j is installed, start it. If all goes well, you can use the neo4j-browser to inspect the database. If you install the 
+DB on a local computer the db is available at this address:
+http://localhost:7474/browser/
+
+To load the gAGDT data in your database, you'll need to load them using the [`neo4j-admin load `](https://neo4j.com/docs/operations-manual/current/tools/dump-load/) 
+command (see the [instruction](https://neo4j.com/docs/operations-manual/current/tools/dump-load/)).
+ 
+
 ## What is the schema of the DB.
 Better documentation will come. For now, I write some basic information on the nodes, properties and relations.
 
