@@ -86,7 +86,7 @@ Then to always write regular expression to match the nth position of a 9-charact
 
 At this moment, only the dependency relations of the AGDT are represented.
 
-~~ I have chosen to define each of the labels as a type of relation. This means that `PRED` is a relation type of the gAGDT.~~
+~~I have chosen to define each of the labels as a type of relation. This means that `PRED` is a relation type of the gAGDT.~~
 
 **New in version 0.2**
 
