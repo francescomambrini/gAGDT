@@ -36,7 +36,7 @@ Note, however, a couple of limitations:
 * as I have taken the speakers from the TEI editions on the Perseus Digital Library, the characters's names are in Greek!
 
 ## How do I install it?
-Clone the project or donwload the file with the data dump: `data/graph.db.dump`.
+Donwload the file with the last db release from [here](http://pagdt.dainst.org/gAGDT/data/).
 
 You will need to have Neo4j installed on your machine (either your local computer or a server) to load this data and start
 using the gAGDT. Refer to the [instructions](https://neo4j.com/docs/operations-manual/current/installation/) on Neo4j's 
@@ -47,7 +47,7 @@ On Debian and Debian-based distributions (e.g Ubuntu) it is as easy as:
 sudo apt-get install neo4j
 ``` 
 
-Mac OS and Windows have desktop applications that you can use also to start up the DB once it is intalled.
+Mac OS and Windows have desktop applications that you can use also to start up the DB once it is installed.
 
 Note, however, that Java 8 is required to run Neo4j. If you're in Linux, instructions on how to install it in Linux (and how to configure your 
 default Java version so that Java 8 is used) are also found at the above link.
@@ -70,8 +70,7 @@ The db has 3 types of nodes:
 * `Token`: the actual token corresponding to "words" attested in the digital edition of reference (or very informally: the words of the texts)
 * `Artificial`: reconstructed nodes that govern elliptical constructions.
 
-Note the properties of tokens (and artificials) are very redundant. For example, I store the full 9-position morphological tag of words (e.g. `v1sria---`) and each of 
-the 9 properties that are condensed in this string: in this case, `pos` = `verb`, `person` = `1s` etc. This is a bit verbose and maybe harder to maintain (if you change a property 
+Note the properties of tokens (and artificial nodes) are very redundant. For example, I store the full 9-position morphological tag of words (e.g. `v1sria---`) and each of the 9 properties that are condensed in this string: in this case, `pos` = `verb`, `person` = `1s` etc. This is a bit verbose and maybe harder to maintain (if you change a property 
 you should also update the corresponding "legacy" property). But it is very handy for format exchange and for querying: after all, it's much easier to write a query where you ask:
 
 ```cypher
@@ -81,32 +80,37 @@ WHERE n.pos = 'verb'
 
 ```
 
-Then to always write regexps to match the nth position of a 9-character string...
+Then to always write regular expression to match the nth position of a 9-character string...
 
 ### Relations
 
-At this moment, only dependency relations with one of the labels of the AGDT are represented.
+At this moment, only the dependency relations of the AGDT are represented.
 
-I have chosen to define each of the labels as a type of relation. This means that `PRED` is a relation type of the gAGDT. 
-This is a very foolish idea that should be changed ASAP! What prompted me to implement such a poor design was the idea of enabling users to write easy cypher queries such as:
+~~ I have chosen to define each of the labels as a type of relation. This means that `PRED` is a relation type of the gAGDT.~~
 
-```cypher
-MATCH (h:Token)-[SBJ]->(d:Token)
+**New in version 0.2**
 
-```
-
-instead of something like:
+The syntactically linked nodes are joined with the `Dependency` relation. The relation goes from head to dependent, so that:
 
 ```cypher
-MATCH (h:Token)-[Dependency {type : "SBJ"}]->(d:Token)
-```
-But it is a terrible idea, especially if you want to introduce
+(h)-[:Dependency]->(d)
+``` 
 
-A note on **Coordination** and **Apposition**. They are **NOT** included in the labels / type or relations. So a coordinated subject will be linked to the verb via `SBJ` not `SBJ_CO`. The fact that it belongs to a coordinated structure or an apposition is recorded at the node level in two boolean properties:
+is read as "node `h` governs node `d`", or `h` is the head and `d` the dependent.
+
+The label of the dependency is encoded in the `type` property of the relation, so that a syntactic construction where `n` is the subject of `v` can be queried as:
+
+```cypher
+(v)-[:Dependency{type:"SBJ"}->(n)
+```
+
+The relationships have also an additional property called `original_label` that registers the original label found in the AGDT XML attribute, which is useful in the case where constructions are treated differently in the gAGDT from the AGLDT.
+
+Two of such cases are **Coordination** and **Apposition**. Marks of coordination and apposition are **NOT** included in the labels / type or relations. So a coordinated subject will be linked to the verb via `type:SBJ` not `type:SBJ_CO`. The fact that a node belongs to a coordinated structure or a apposition is recorded at the node level in two boolean properties:
 * `isMemberOfCoord` (0 or 1)
 * `isMemberOfApos` (0 or 1)
 
-I had this idea from the PDT and it is a much better way of implementing coordination and apposition than to use the appendix to the label!
+I had this idea from the PDT and it is a much better way of implementing coordination and apposition than to use the appendix to the labels!
 
 ## What is the license of these data?
 The AGLDT is distributed under a CC BY-SA 3.0 license. And so is gAGDT. Please, refer to the [AGDT page](https://github.com/PerseusDL/treebank_data/blob/master/v2.1/Greek/README.MD#annotators) for a full list of the annotators that should be credited with the annotation of the those texts. They should thanked and praised for their effort...
