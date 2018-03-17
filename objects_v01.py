@@ -1,3 +1,7 @@
+"""
+OGM implementation to work with gAGDT v. 0.1
+"""
+
 from py2neo.ogm import GraphObject, Property, RelatedTo, RelatedFrom, Related, RelatedObjects
 from py2neo import Graph, Node, Relationship
 from py2neo.types import remote
