@@ -11,20 +11,20 @@ from treebanks import Sentence, Word, Artificial_Token, Morph
 from tqdm import tqdm
 
 def _createHeadDep(t):
-    '''gets a token object (word or artificial);
-    returns a tuple (head-address, dependent-address)'''
+    """gets a token object (word or artificial);
+    returns a tuple (head-address, dependent-address)"""
     add_parts = t.address.split("#")
     return ("{}#{}#{}".format(add_parts[0], add_parts[1], t.head), t.address)
 
 
 def createRels(Sent, graph):
-    '''Takes a Sentence object and a Neo4j graph! Note that the nodes must have been already created in the DB'''
+    """Takes a Sentence object and a Neo4j graph! Note that the nodes must have been already created in the DB"""
     for t in Sent._tokens:
         head_add,dep_add = _createHeadDep(t)
         query = '''MATCH (h),(d)
-        WHERE h.address = "{}" AND d.address = "{}"
-        CREATE UNIQUE (h)-[r:Dependency]->(d)
-        RETURN r'''.format(head_add, dep_add,t._relation)
+        WHERE h.address = "%s" AND d.address = "%s"
+        CREATE UNIQUE (h)-[r:Dependency{type : "%s"}, original_label: "%s"]->(d)
+        RETURN r''' % (head_add, dep_add,t._relation, t.original_label)
 #        print(t.form, t._relation)
         graph.run(query)
 
