@@ -1,7 +1,6 @@
 from lxml import etree
 import re
 import os
-from py2neo import Graph, Node, Relationship
 
 def reverseDict(dic):
     return {v: k for k, v in dic.items()}
