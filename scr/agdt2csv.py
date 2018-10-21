@@ -24,9 +24,6 @@ import csv
 from perseus_nlp_toolkit.utils import Word, Artificial
 
 
-def generate_sent_ctsurns():
-    pass
-
 
 
 # def generate_urns(doc_urn, anno_sents):
@@ -91,9 +88,9 @@ def process_token(tok):
     original_label = tok.relation if tok.relation else ""
 
     # is Member
-    label_app = original_label.split("_")[-1]
-    isMemberOfCoord = 'true' if label_app == "CO" else 'false'
-    isMemberOfApos = 'true' if label_app == "AP" else 'false'
+    label_apps = original_label.split("_")
+    isMemberOfCoord = 'true' if "CO" in label_apps else 'false'
+    isMemberOfApos = 'true' if "AP" in label_apps else 'false'
 
     # Morphs
     m = Morph(postag)
@@ -269,8 +266,8 @@ if __name__ == "__main__":
         sent_urn = s = "{}.tokenized:{}-{}".format(docurn, start_token_counter, c)
         s = [sid, config["author"], config["work"], meta.subdoc, sent_urn]
         sents.append(s)
-        rels = [(sdic[w.head], "syntGoverns", sdic[w.id]) for w in annsent]
-        rels.extend( [(wid, "isTokenOf", sdic["0"]) for k,wid in sdic.items() if k != 0] )
+        rels = [(sdic[w.head], "syntGoverns", sdic[w.id], w.relation.split("_")[0]) for w in annsent]
+        rels.extend( [(wid, "isTokenOf", sdic["0"], "none") for k,wid in sdic.items() if k != '0'] )
 
         relations.extend(rels)
 
@@ -284,7 +281,7 @@ if __name__ == "__main__":
     art_file = os.path.join(outdir, fbasename+".artificial.csv")
     _write_csv(art_file, wordshead, arts)
     rel_file = os.path.join(outdir, fbasename+".relations.csv")
-    _write_csv(rel_file, ["Source", "RelationType", "Target"], relations)
+    _write_csv(rel_file, ["Source", "RelationType", "Target", "DepType"], relations)
 
 
 

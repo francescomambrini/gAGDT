@@ -1,0 +1,46 @@
+// Usage: neo4j-shell -path /var/lib/neo4j/data/databases/gagdt.db -file /home/francesco/Documents/gagdt_import/import_gagdt.cyph
+
+
+// Load Sentences
+
+LOAD CSV WITH HEADERS FROM "file:///Hom_Od/tlg0012.tlg002.perseus-grc1.sentences.csv" AS sent
+FIELDTERMINATOR '\t'
+CREATE(:Sentence{ CiteURN : sent.ID, 
+Work : sent.Work, Author : sent.Author, Subdoc : sent.Subdoc,
+TextURN : sent.TextURN});
+
+// Load Tokens
+LOAD CSV WITH HEADERS FROM "file:///Hom_Od/tlg0012.tlg002.perseus-grc1.tokens.csv" AS row
+FIELDTERMINATOR '\t'
+CREATE(:Token {CiteURN : row.ID, Form : row.Form, Lemma : row.Lemma, Rank : toInteger(row.Rank),
+Postag : row.Postag, 
+Pos : row.Pos, Person : row.Person, Number : row.Number, Tense : row.Tense, Mood : row.Mood,
+Voice : row.Voice, Gender : row.Gender, Case : row.Case, Degree : row.Degree,
+IsMemberOfCoord : toBoolean(row.IsMemberOfCoord), IsMemberOfApos : toBoolean(row.IsMemberOfApos),
+TextURN : row.TextURN});
+
+// Load Artificials
+LOAD CSV WITH HEADERS FROM "file:///Hom_Od/tlg0012.tlg002.perseus-grc1.artificial.csv" AS row
+FIELDTERMINATOR '\t'
+CREATE(:Artificial {CiteURN : row.ID, Form : row.Form, Rank : toInteger(row.Rank),
+IsMemberOfCoord : toBoolean(row.IsMemberOfCoord), IsMemberOfApos : toBoolean(row.IsMemberOfApos)});
+
+// Load Relations: dependency
+LOAD CSV WITH HEADERS FROM "file:///Hom_Od/tlg0012.tlg002.perseus-grc1.relations.csv" AS row
+FIELDTERMINATOR '\t'
+WITH row
+WHERE row.RelationType = "syntGoverns"
+MATCH (h {CiteURN : row.Source})
+MATCH (d {CiteURN : row.Target})
+MERGE (h)-[r:GOVERNS {type: row.DepType}]->(d);
+
+// Load Relations: isTokenOf
+USING PERIODIC COMMIT 1000
+LOAD CSV WITH HEADERS FROM "file:///Hom_Od/tlg0012.tlg002.perseus-grc1.relations.csv" AS row
+FIELDTERMINATOR '\t'
+WITH row
+WHERE row.RelationType = "isTokenOf" 
+MATCH (h {CiteURN : row.Source})
+MATCH (d {CiteURN : row.Target})
+MERGE (h)-[r:IS_TOKEN_OF]->(d);
+

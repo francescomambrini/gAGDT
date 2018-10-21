@@ -13,65 +13,114 @@ with that the line should read: `dbms.directories.import=import`
 **commented out**
 * do not forget to **restart neo4j** (e.g. `sudo service neo4j restart`)
 
+# Using Neo4j Import Tool
+
+See the full documentation [here](https://neo4j.com/docs/operations-manual/current/tutorial/import-tool/)
+
+```bash
+neo4j-admin import --nodes:Sentence "~/Documents/gagdt_import/headers/SentenceHeader.csv,~/Documents/gagdt_import/Aesch_Ag/tlg0085.tlg005.perseus-grc1.sentences.csv" \
+--nodes:Token "../TokenHeader.csv,tlg0085.tlg005.perseus-grc1.tokens.csv" \
+--nodes:Artificial "../ArtificialHeader.csv,tlg0085.tlg005.perseus-grc1.artificials.csv" \
+--relationships "../RelationHeader.csv,~/Documents/tlg0085.tlg005.perseus-grc1.relations.csv" \
+--delimiter "\t"
+
+```
+
+# Using a cypher script
+
+To execute it:
+
+```bash
+ cat import_gagdt.cyph | cypher-shell -u <neo4j-user> -p <your-neo4j-pwd>
+```
+
 # Cypher queries
 
 If you're using the method above to allow CSV import, you don't need to specify 
 the full path of the file you want to import.
 
-## Preliminary: setting the filenames
+## Preliminary operations
+
+### Setting the filenames
 
 ```cypher
-:params "fsents" : 'file:///tlg0085.tlg003/urn:cts:greekLit:tlg0085.tlg003.perseus-grc2.tbsents.csv',
-"ftokens" : 'file:///tlg0085.tlg003/urn:cts:greekLit:tlg0085.tlg003.perseus-grc2.tbtokens.csv',
-"fartificials" : 'file:///tlg0085.tlg003/urn:cts:greekLit:tlg0085.tlg003.perseus-grc2.tbartificials.csv',
-"frelations" : 'file:///tlg0085.tlg003/urn:cts:greekLit:tlg0085.tlg003.perseus-grc2.relations.csv'
+:params "fsents" : 'file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.sentences.csv',
+"ftokens" : 'file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.tokens.csv',
+"fartificials" : 'file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.artificial.csv',
+"frelations" : 'file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.relations.csv'
 
+```
+
+### Setting uniqueness constraints
+
+```cypher
+CREATE CONSTRAINT ON (sent:Sentence) ASSERT sent.CiteURN IS UNIQUE
+
+CREATE CONSTRAINT ON (tok:Token) ASSERT tok.CiteURN IS UNIQUE
+
+CREATE CONSTRAINT ON (art:Artificial) ASSERT art.CiteURN IS UNIQUE
 ```
 
 ## Load sentences
 ```cypher
-LOAD CSV WITH HEADERS FROM $fsents AS sent
+LOAD CSV WITH HEADERS FROM "file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.sentences.csv" AS sent
 FIELDTERMINATOR '\t'
-CREATE(:Sentence{ CiteUrn : sent.citeUrn, ExemplarUrn : sent.exemplarUrn, 
-Work : sent.work, Author : sent.author, Speaker : sent.speaker, Chronology : sent.chronology,
-CtsUrn : sent.ctsUrn})
+CREATE(:Sentence{ CiteURN : sent.ID, 
+Work : sent.Work, Author : sent.Author, Subdoc : sent.Subdoc,
+TextURN : sent.TextURN});
 
 ```
 
 ## Load Tokens
 
 ```cypher
-LOAD CSV WITH HEADERS FROM $ftokens AS row
+LOAD CSV WITH HEADERS FROM "file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.tokens.csv" AS row
 FIELDTERMINATOR '\t'
-CREATE(:Token {CiteUrn : row.citeurn, Form : row.form, Lemma : row.lemma, Rank : row.rank,
-Pos : row.pos, Person : row.person, Number : row.number, Tense : row.tense, Mood : row.mood,
-Voice : row.voice, Gender : row.gender, Case : row.case, Degree : row.degree,
-Postag : row.postag, Head : row.head, OriginalLabel : row.originalLabel,
-IsMemberOfCoord : row.isMemberOfCoord, IsMemberOfApos : row.isMemberOfApos,
-CtsUrn : row.ctsUrn, ExemplarUrn : row.exemplarUrn})
+CREATE(:Token {CiteURN : row.ID, Form : row.Form, Lemma : row.Lemma, Rank : toInteger(row.Rank),
+Postag : row.Postag, 
+Pos : row.Pos, Person : row.Person, Number : row.Number, Tense : row.Tense, Mood : row.Mood,
+Voice : row.Voice, Gender : row.Gender, Case : row.Case, Degree : row.Degree,
+IsMemberOfCoord : toBoolean(row.IsMemberOfCoord), IsMemberOfApos : toBoolean(row.IsMemberOfApos),
+TextURN : row.TextURN});
 ```
 
 ## Load Artificials
 
 ```cypher
-LOAD CSV WITH HEADERS FROM $fartificials AS row
+LOAD CSV WITH HEADERS FROM "file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.artificial.csv" AS row
 FIELDTERMINATOR '\t'
-CREATE(:Artificial {CiteUrn : row.citeurn, Form : row.form, Rank : row.rank,
-Head : row.head, OriginalLabel : row.originalLabel,
-IsMemberOfCoord : row.isMemberOfCoord, IsMemberOfApos : row.isMemberOfApos,
-ArtificialType : row.ArtificialType})
+CREATE(:Artificial {CiteURN : row.ID, Form : row.Form, Rank : toInteger(row.Rank),
+IsMemberOfCoord : toBoolean(row.IsMemberOfCoord), IsMemberOfApos : toBoolean(row.IsMemberOfApos)});
+
 ```
 
 ## Load Relations
 
+### Dependency
+
 ```cypher
-LOAD CSV WITH HEADERS FROM $frelations AS row
+LOAD CSV WITH HEADERS FROM "file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.relations.csv" AS row
 FIELDTERMINATOR '\t'
-MATCH (h {CiteUrn : row.Source}), (d {CiteUrn : row.Target})
-MERGE (h)-[r:GOVERNS {type: row.RelType}]->(d)
+WITH row
+WHERE row.RelationType = "syntGoverns"
+MATCH (h {CiteURN : row.Source})
+MATCH (d {CiteURN : row.Target})
+MERGE (h)-[r:GOVERNS {type: row.DepType}]->(d);
 ```
 
+### IsTokenOf
 
+```cypher
+USING PERIODIC COMMIT 1000
+LOAD CSV WITH HEADERS FROM "file:///Aesch_Ag/tlg0085.tlg005.perseus-grc1.relations.csv" AS row
+FIELDTERMINATOR '\t'
+WITH row
+WHERE row.RelationType = "isTokenOf" // etc
+MATCH (h {CiteURN : row.Source})
+MATCH (d {CiteURN : row.Target})
+MERGE (h)-[r:IS_TOKEN_OF]->(d);
+
+```
 
 
 
