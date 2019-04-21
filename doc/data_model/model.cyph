@@ -1,0 +1,8 @@
+CREATE 
+  (`0` :Sentence {`{id`:'urn:cite2:gagdt:sentence_graphs.v1:soph_aj_1}',`{text`:'urn:cts:greekLit:tlg0011.tlg003.gagdt.tokenized:1.1-1.4.8}',`{Speaker`:'Athena}',`{Author`:'Sophocles}',`{Title`:'Ajax}'}) ,
+  (`1` :Word {`{id`:'}',`{CtsUrn`:'}',`{Rank`:'}',`{Form`:'}',`{Lemma`:'}',`{Postag`:'}'}) ,
+  (`2` :Artificial {`{id`:'}',`{Rank`:'}',`{Lemma`:'}',`{Postag`:'}'}) ,
+  (`0`)-[:`SynGoverns` {`{Relation`:'PRED}',`{isMemberOfCoord`:'0}',`{isMemberOfApos`:'0}'}]->(`1`),
+  (`1`)-[:`isPartOfSent` ]->(`0`),
+  (`1`)-[:`RELATED_TO` ]->(`2`),
+  (`2`)-[:`isPartOfSent` ]->(`0`)
