@@ -2527,7 +2527,7 @@
       <word id="3" form="ἀτίμους" lemma="ἄτιμος" postag="a-p---fa-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg005:412" head="2"/>
       <word id="4" form="ἀλοιδόρους" lemma="ἀλοίδορος" postag="a-p---fa-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg005:412" head="2"/>
       <word id="5" form="ἄλγιστ'" lemma="ἀλγίων" postag="a-p---na-" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg005:413" head="6"/>
-      <word id="6" form="ἀφημένων" lemma="ἄφημαι" postag="v--pp-mg-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg005:413" head="2"/>
+      <word id="6" form="ἀφημένων" lemma="ἄφημαι" postag="v-pppmmg-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg005:413" head="2"/>
       <word id="7" form="ἰδεῖν" lemma="εἶδον" postag="v--ana---" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg005:413" head="1"/>
       <word id="8" form="." lemma="." postag="u--------" relation="AuxK" cite="urn:cts:greekLit:tlg0085.tlg005:413" head="0"/>
    </sentence>
@@ -5434,7 +5434,7 @@
       <word id="4" form="πρῶτον" lemma="πρῶτος" postag="a-s---na-" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg005:861" head="18"/>
       <word id="5" form="ἄρσενος" lemma="ἄρσην" postag="n-s----g-" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg005:861" head="6"/>
       <word id="6" form="δίχα" lemma="δίχα" postag="d--------" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg005:861" head="7"/>
-      <word id="7" form="ἧσθαι" lemma="ἧμαι" postag="v--rn----" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg005:862" head="18"/>
+      <word id="7" form="ἧσθαι" lemma="ἧμαι" postag="v--rnm---" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg005:862" head="18"/>
       <word id="8" form="δόμοις" lemma="δόμος" postag="n-p---md-" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg005:862" head="7"/>
       <word id="9" form="ἔρημον" lemma="ἐρῆμος" postag="a-s---fa-" relation="ATV" cite="urn:cts:greekLit:tlg0085.tlg005:862" head="3"/>
       <word id="10" form="ἔκπαγλον" lemma="ἔκπαγλος" postag="a-s---nn-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg005:862" head="11"/>

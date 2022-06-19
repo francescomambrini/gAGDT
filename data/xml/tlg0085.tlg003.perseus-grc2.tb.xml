@@ -6388,7 +6388,7 @@
       <word id="39" form="κλεινὴ" lemma="κλεινός" postag="a-s---fn-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:834" head="40"/>
       <word id="40" form="δάμαρ" lemma="δάμαρ" postag="n-s---fn-" relation="PNOM" cite="urn:cts:greekLit:tlg0085.tlg003:834" head="42"/>
       <word id="41" form="μέλλουσ'" lemma="μέλλω" postag="v-sppafn-" relation="PNOM" cite="urn:cts:greekLit:tlg0085.tlg003:835" head="36"/>
-      <word id="42" form="ἔσεσθαι" lemma="εἰμί" postag="v--fn----" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:835" head="41"/>
+      <word id="42" form="ἔσεσθαι" lemma="εἰμί" postag="v--fnm---" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:835" head="41"/>
       <word id="43" form="." lemma="." postag="u--------" relation="AuxK" cite="urn:cts:greekLit:tlg0085.tlg003:835" head="0"/>
       <word id="44" insertion_id="0043e" form="[0]" artificial="elliptic" relation="PRED" head="0"/>
    </sentence>
