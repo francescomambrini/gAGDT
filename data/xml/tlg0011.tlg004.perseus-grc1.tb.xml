@@ -1112,7 +1112,7 @@
       <word id="9" form="πρὸς" lemma="πρός" postag="r--------" head="12" relation="AuxP" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="10" form="οἶκον" lemma="οἶκος" postag="n-s---ma-" head="9" relation="OBJ" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="11" form="οὐκέθ'" lemma="οὐκέτι" postag="d--------" head="12" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
-      <word id="12" form="ἵκεθ'" lemma="ἱκνέομαι" postag="v3sai----" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
+      <word id="12" form="ἵκεθ'" lemma="ἱκνέομαι" postag="v3saim---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="13" form="," lemma="," postag="u--------" head="14" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="14" form="ὡς" lemma="ὡς" postag="c--------" head="12" relation="AuxC" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="15" form="ἀπεστάλη" lemma="ἀποστέλλω" postag="v3saip---" head="14" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>

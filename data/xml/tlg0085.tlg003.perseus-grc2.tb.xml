@@ -970,7 +970,7 @@
       <word id="17" form=";" lemma=";" postag="u--------" relation="AuxK" cite="urn:cts:greekLit:tlg0085.tlg003:116" head="0"/>
    </sentence>
    <sentence id="78" subdoc="117-118" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
-      <word id="1" form="ἵκετο" lemma="ἱκνέομαι" postag="v3sai----" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg003:117" head="0"/>
+      <word id="1" form="ἵκετο" lemma="ἱκνέομαι" postag="v3saim---" relation="PRED" cite="urn:cts:greekLit:tlg0085.tlg003:117" head="0"/>
       <word id="2" form="τερμόνιον" lemma="τερμόνιος" postag="a-s---ma-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:117" head="4"/>
       <word id="3" form="ἐπὶ" lemma="ἐπί" postag="r--------" relation="AuxP" cite="urn:cts:greekLit:tlg0085.tlg003:117" head="1"/>
       <word id="4" form="πάγον" lemma="πάγος" postag="n-s---ma-" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:117" head="3"/>
@@ -1509,7 +1509,7 @@
    <sentence id="111" subdoc="201-208" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <word id="1" form="ἐπεὶ" lemma="ἐπεί" postag="c--------" relation="AuxC" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="35"/>
       <word id="2" form="τάχιστ'" lemma="ταχύς" postag="a-p---na-" relation="AuxZ" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="1"/>
-      <word id="3" form="ἤρξαντο" lemma="ἄρχω" postag="v3pai----" relation="ATR_CO" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="7"/>
+      <word id="3" form="ἤρξαντο" lemma="ἄρχω" postag="v3paim---" relation="ATR_CO" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="7"/>
       <word id="4" form="δαίμονες" lemma="δαίμων" postag="n-p---mn-" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="3"/>
       <word id="5" form="χόλου" lemma="χόλος" postag="n-s---mg-" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:201" head="4"/>
       <word id="6" form="στάσις" lemma="στάσις" postag="n-s---fn-" relation="SBJ" cite="urn:cts:greekLit:tlg0085.tlg003:202" head="10"/>
@@ -2112,7 +2112,7 @@
    <sentence id="153" subdoc="276-277" document_id="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2">
       <word id="1" form="πίθεσθέ" lemma="πείθω" postag="v2pamm---" relation="AuxY" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="3"/>
       <word id="2" form="μοι" lemma="ἐγώ" postag="p-s---md-" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="3"/>
-      <word id="3" form="πίθεσθε" lemma="πείθω" postag="v2pam----" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="4"/>
+      <word id="3" form="πίθεσθε" lemma="πείθω" postag="v2pamm---" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="4"/>
       <word id="4" form="," lemma="," postag="u--------" relation="COORD" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="0"/>
       <word id="5" form="συμπονήσατε" lemma="συμπονέω" postag="v2pama---" relation="PRED_CO" cite="urn:cts:greekLit:tlg0085.tlg003:276" head="4"/>
       <word id="6" form="τῷ" lemma="τῷ" postag="d--------" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg003:277" head="8"/>
