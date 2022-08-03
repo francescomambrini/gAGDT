@@ -6599,7 +6599,7 @@
       <word id="1" form="εἰ" lemma="εἰ" postag="c--------" head="6" relation="AuxC" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
       <word id="2" form="μὴ" lemma="μή" postag="c--------" head="4" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
       <word id="3" form="πατὴρ" lemma="πατήρ" postag="n-s---mn-" head="4" relation="PNOM" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
-      <word id="4" form="ἦσθ'" lemma="εἰμί" postag="v2piia---" head="1" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
+      <word id="4" form="ἦσθ'" lemma="εἰμί" postag="v2siia---" head="1" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
       <word id="5" form="," lemma="," postag="u--------" head="1" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
       <word id="6" form="εἶπον" lemma="εἶπον" postag="v1saia---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>
       <word id="7" form="ἄν" lemma="ἄν" postag="g--------" head="6" relation="AuxY" cite="urn:cts:greekLit:tlg0011.tlg002:755"/>

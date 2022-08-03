@@ -1082,7 +1082,7 @@
       <word id="4" form="ἀλλὰ" lemma="ἀλλά" postag="d--------" head="7" relation="AuxY" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
       <word id="5" form="σὺ" lemma="σύ" postag="p-s---mn-" head="7" relation="SBJ" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
       <word id="6" form="θᾶσσον" lemma="ταχύς" postag="a-s---nac" head="7" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
-      <word id="7" form="ἔχ̓" lemma="ἔχω" postag="v2spma---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
+      <word id="7" form="ἔχ'" lemma="ἔχω" postag="v2spma---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
       <word id="8" form="ἡνία" lemma="ἡνία" postag="n-p---na-" head="7" relation="OBJ" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
       <word id="9" form="φοινικόεντα" lemma="φοινικόεις" postag="a-p---na-" head="8" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg003:1.95"/>
       <word id="10" form="ἵππων" lemma="ἵππος" postag="n-p---mg-" head="8" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg003:1.96"/>
@@ -1732,7 +1732,7 @@
       <secondary>alexlessie</secondary>
       <word id="1" form="εἷμα" lemma="εἷμα" postag="n-s---na-" head="3" relation="OBJ" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
       <word id="2" form="δ'" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
-      <word id="3" form="ἔχ̓" lemma="ἔχω" postag="v3siia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
+      <word id="3" form="ἔχ'" lemma="ἔχω" postag="v3siia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
       <word id="4" form="ἄμφ'" lemma="ἀμφί" postag="r--------" head="3" relation="AuxP" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
       <word id="5" form="ὤμοισι" lemma="ὦμος" postag="n-p---md-" head="4" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>
       <word id="6" form="δαφοινεὸν" lemma="δαφοινεός" postag="a-s---na-" head="1" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg003:1.159"/>

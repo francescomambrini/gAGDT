@@ -922,7 +922,7 @@
       <word id="13" form="ἀτιμάσας" lemma="ἀτιμάω" postag="v-pppafa-" head="6" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg001:171"/>
       <word id="14" form="," lemma="," postag="u--------" head="18" relation="AuxX" cite="urn:cts:greekLit:tlg0085.tlg001:171"/>
       <word id="15" form="τὸν" lemma="ὁ" postag="l-s---ma-" head="18" relation="OBJ" cite="urn:cts:greekLit:tlg0085.tlg001:171"/>
-      <word id="16" form="αὐτός" lemma="αὐτός" postag="a-s----mn-" head="18" relation="AtvV" cite="urn:cts:greekLit:tlg0085.tlg001:171-172"/>
+      <word id="16" form="αὐτός" lemma="αὐτός" postag="a-s---mn-" head="18" relation="AtvV" cite="urn:cts:greekLit:tlg0085.tlg001:171-172"/>
       <word id="17" form="ποτ'" lemma="ποτέ" postag="g--------" head="18" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg001:172"/>
       <word id="18" form="ἔκτισεν" lemma="κτίζω" postag="v3saia---" head="12" relation="ATR" cite="urn:cts:greekLit:tlg0085.tlg001:172"/>
       <word id="19" form="γόνῳ" lemma="γόνος" postag="n-s---md-" head="18" relation="ADV" cite="urn:cts:greekLit:tlg0085.tlg001:172"/>

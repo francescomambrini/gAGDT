@@ -1997,7 +1997,7 @@
       <word id="12" form="τεύχεσι" lemma="τεῦχος" postag="n-p---nd-" head="13" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
       <word id="13" form="λαμπομένους" lemma="λάμπω" postag="v-pppema-" head="14" relation="ATR_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
       <word id="14" form="," lemma="," postag="u--------" head="10" relation="COORD" cite=""/>
-      <word id="15" form="δολίχ̓" lemma="δολιχός" postag="a-p---na-" head="16" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
+      <word id="15" form="δολίχ'" lemma="δολιχός" postag="a-p---na-" head="16" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
       <word id="16" form="ἔγχεα" lemma="ἔγχος" postag="n-p---na-" head="18" relation="OBJ" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
       <word id="17" form="χερσὶν" lemma="χείρ" postag="n-p---fd-" head="18" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
       <word id="18" form="ἔχοντας" lemma="ἔχω" postag="v-pppama-" head="14" relation="ATR_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.186"/>
@@ -5004,7 +5004,7 @@
       <word id="18" form="," lemma="," postag="u--------" head="31" relation="AuxX" cite=""/>
       <word id="19" form="ὅ" lemma="ὁ" postag="p-s---mn-" head="22" relation="SBJ" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
       <word id="20" form="μιν" lemma="μιν" postag="p-s---ma-" head="28" relation="OBJ" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
-      <word id="21" form="τάχ̓" lemma="τάχα" postag="d--------" head="22" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
+      <word id="21" form="τάχ'" lemma="τάχα" postag="d--------" head="22" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
       <word id="22" form="ἔμελλε" lemma="μέλλω" postag="v3siia---" head="31" relation="ATR_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
       <word id="23" form="βίῃ" lemma="βία" postag="n-s---fd-" head="24" relation="ADV_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
       <word id="24" form="καὶ" lemma="καί" postag="c--------" head="26" relation="COORD" cite="urn:cts:greekLit:tlg0020.tlg001:1.490"/>
@@ -5995,7 +5995,7 @@
       <secondary>alexlessie</secondary>
       <word id="1" form="θαῦμα" lemma="θαῦμα" postag="n-s---nn-" head="3" relation="SBJ" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
       <word id="2" form="δ'" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
-      <word id="3" form="ἔχ̓" lemma="ἔχω" postag="v3siia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
+      <word id="3" form="ἔχ'" lemma="ἔχω" postag="v3siia---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
       <word id="4" form="ἀθανάτους" lemma="ἀθάνατος" postag="a-p---ma-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
       <word id="5" form="τε" lemma="τε" postag="g--------" head="8" relation="AuxY" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
       <word id="6" form="θεοὺς" lemma="θεός" postag="n-p---ma-" head="8" relation="OBJ_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.588"/>
@@ -8490,7 +8490,7 @@
       <word id="38" form="ἄλλοτε" lemma="ἄλλοτε" postag="d--------" head="41" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
       <word id="39" form="δ'" lemma="δέ" postag="g--------" head="44" relation="AuxY" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
       <word id="40" form="αὖ" lemma="αὖ" postag="d--------" head="41" relation="AuxY" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
-      <word id="41" form="ῥοίζεσχ̓" lemma="ῥοιζέω" postag="v3siia---" head="44" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
+      <word id="41" form="ῥοίζεσχ'" lemma="ῥοιζέω" postag="v3siia---" head="44" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
       <word id="42" form="," lemma="," postag="u--------" head="44" relation="AuxX" cite=""/>
       <word id="43" form="ὑπὸ" lemma="ὑπό" postag="r--------" head="45" relation="AuxZ" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
       <word id="44" form="δ'" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0020.tlg001:1.835"/>
