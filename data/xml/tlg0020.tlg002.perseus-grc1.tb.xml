@@ -6888,7 +6888,7 @@
       <word id="6" form="," lemma="," postag="u--------" head="14" relation="AuxX"/>
       <word id="7" form="ἐν" lemma="ἐν" postag="r--------" head="9" relation="AuxP"/>
       <word id="8" form="σκιῇ" lemma="σκιά" postag="n-s---fd-" head="7" relation="ADV"/>
-      <word id="9" form="ἑζόμενον" lemma="ἕζομαι" postag="v-sppema-" head="14" relation="ADV_CO"/>
+      <word id="9" form="ἑζόμενον" lemma="ἕζομαι" postag="v-sppmma-" head="14" relation="ADV_CO"/>
       <word id="10" form="," lemma="," postag="u--------" head="14" relation="AuxX"/>
       <word id="11" form="κεκορημένον" lemma="κορέννυμι" postag="v-srpema-" head="14" relation="ADV_CO"/>
       <word id="12" form="ἦτορ" lemma="ἦτορ" postag="n-s---na-" head="11" relation="OBJ"/>
@@ -8500,7 +8500,7 @@
       <primary>millermo</primary>
       <primary>megluthin</primary>
       <secondary>tovahk</secondary>
-      <word id="1" form="ἑζόμενος" lemma="ἕζομαι" postag="v-sppemn-" head="20" relation="ADV"/>
+      <word id="1" form="ἑζόμενος" lemma="ἕζομαι" postag="v-sppmmn-" head="20" relation="ADV"/>
       <word id="2" form="δ'" lemma="δέ" postag="g--------" head="11" relation="AuxY"/>
       <word id="3" form="ὅ" lemma="ὁ" postag="l-s---mn-" head="6" relation="ATR"/>
       <word id="4" form="γε" lemma="γε" postag="g--------" head="3" relation="AuxZ"/>
