@@ -1112,7 +1112,7 @@
       <word id="9" form="πρὸς" lemma="πρός" postag="r--------" head="12" relation="AuxP" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="10" form="οἶκον" lemma="οἶκος" postag="n-s---ma-" head="9" relation="OBJ" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="11" form="οὐκέθ'" lemma="οὐκέτι" postag="d--------" head="12" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
-      <word id="12" form="ἵκεθ'" lemma="ἱκνέομαι" postag="v3sai----" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
+      <word id="12" form="ἵκεθ'" lemma="ἱκνέομαι" postag="v3saim---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="13" form="," lemma="," postag="u--------" head="14" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="14" form="ὡς" lemma="ὡς" postag="c--------" head="12" relation="AuxC" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
       <word id="15" form="ἀπεστάλη" lemma="ἀποστέλλω" postag="v3saip---" head="14" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg004:115"/>
@@ -3902,7 +3902,7 @@
       <word id="4" form="σῆς" lemma="σός" postag="a-s---fg-" head="1" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
       <word id="5" form="ποῖος" lemma="ποῖος" postag="a-s---mn-" head="8" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
       <word id="6" form="οὐκ" lemma="οὐ" postag="d--------" head="7" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
-      <word id="7" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="9" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
+      <word id="7" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="9" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
       <word id="8" form="λιμήν" lemma="λιμήν" postag="n-s---mn-" head="7" relation="SBJ" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
       <word id="9" form="," lemma="," postag="u--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0011.tlg004:420"/>
       <word id="10" form="ποῖος" lemma="ποῖος" postag="a-s---mn-" head="11" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:421"/>
@@ -5729,7 +5729,7 @@
       <word id="7" form="τοῦδε" lemma="ὅδε" postag="p-s---mg-" head="6" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:620"/>
       <word id="8" form="μὲν" lemma="μέν" postag="g--------" head="13" relation="AuxY" cite="urn:cts:greekLit:tlg0011.tlg004:620"/>
       <word id="9" form="πεπραγμέν'" lemma="πράσσω" postag="v-prpenn-" head="10" relation="PNOM" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
-      <word id="10" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
+      <word id="10" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
       <word id="11" form="," lemma="," postag="u--------" head="13" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
       <word id="12" form="τἀμὰ" lemma="ἐμός" postag="a-p---nn-" head="16" relation="SBJ" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
       <word id="13" form="δ'" lemma="δέ" postag="g--------" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg004:621"/>
@@ -13951,7 +13951,7 @@
       <word id="9" form="," lemma="," postag="u--------" head="7" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg004:1492"/>
       <word id="10" form="τίς" lemma="τίς" postag="p-s---mn-" head="12" relation="SBJ" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
       <word id="11" form="οὗτος" lemma="οὗτος" postag="a-s---mn-" head="12" relation="PNOM" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
-      <word id="12" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
+      <word id="12" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
       <word id="13" form="," lemma="," postag="u--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
       <word id="14" form="τίς" lemma="τίς" postag="p-s---mn-" head="15" relation="SBJ" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
       <word id="15" form="παραρρίψει" lemma="παραρρίπτω" postag="v3sfia---" head="13" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg004:1493"/>
@@ -13966,7 +13966,7 @@
       <word id="24" form="ταῖς" lemma="ὁ" postag="l-p---fd-" head="26" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:1494"/>
       <word id="25" form="ἐμαῖς" lemma="ἐμός" postag="a-p---fd-" head="29" relation="ATR_CO" cite="urn:cts:greekLit:tlg0011.tlg004:1494"/>
       <word id="26" form="γοναῖσιν" lemma="γονή" postag="n-p---fd-" head="27" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>
-      <word id="27" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="20" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>
+      <word id="27" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="20" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>
       <word id="28" form="σφῷν" lemma="σφεῖς" postag="p-p---fg-" head="29" relation="ATR_CO" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>
       <word id="29" form="θ'" lemma="τε" postag="g--------" head="26" relation="COORD" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>
       <word id="30" form="ὁμοῦ" lemma="ὁμοῦ" postag="d--------" head="29" relation="AuxY" cite="urn:cts:greekLit:tlg0011.tlg004:1495"/>

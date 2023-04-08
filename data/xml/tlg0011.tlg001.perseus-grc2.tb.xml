@@ -6664,7 +6664,7 @@
       <word id="7" form="κῆρυξ" lemma="κῆρυξ" postag="n-s---mn-" head="12" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
       <word id="8" form="ἀπ'" lemma="ἀπό" postag="r--------" head="10" relation="AuxP" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
       <word id="9" form="οἴκων" lemma="οἶκος" postag="n-p---mg-" head="8" relation="OBJ" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
-      <word id="10" form="ἵκετ'" lemma="ἱκνέομαι" postag="v3sai----" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
+      <word id="10" form="ἵκετ'" lemma="ἱκνέομαι" postag="v3saim---" head="2" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
       <word id="11" form="οἰκεῖος" lemma="οἰκεῖος" postag="a-s---mn-" head="12" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
       <word id="12" form="Λίχας" lemma="Λίχας" postag="n-s---mn-" head="10" relation="SBJ" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
       <word id="13" form="," lemma="," postag="u--------" head="16" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg001:757"/>
@@ -9243,7 +9243,7 @@
       <word id="1" form="ὦναξ" lemma="ἄναξ" postag="n-s---mv-" head="2" relation="ATR" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
       <word id="2" form="Ἀίδη" lemma="ᾍδης" postag="n-s---mv-" head="4" relation="ExD" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
       <word id="3" form="," lemma="," postag="u--------" head="2" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
-      <word id="4" form="δέξαι" lemma="δέχομαι" postag="v2sam----" head="16" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
+      <word id="4" form="δέξαι" lemma="δέχομαι" postag="v2samm---" head="16" relation="PRED_CO" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
       <word id="5" form="μ'" lemma="ἐγώ" postag="p-s---ma-" head="4" relation="OBJ" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
       <word id="6" form="," lemma="," postag="u--------" head="16" relation="AuxX" cite="urn:cts:greekLit:tlg0011.tlg001:1085"/>
       <word id="7" form="ὦ" lemma="ὦ" postag="i--------" head="9" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg001:1086"/>

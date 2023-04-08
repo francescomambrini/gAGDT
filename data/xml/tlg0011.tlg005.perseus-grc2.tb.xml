@@ -11560,7 +11560,7 @@
       <word id="9" form="φίλον" lemma="φίλος" postag="a-s---nn-" head="15" relation="PNOM" cite="urn:cts:greekLit:tlg0011.tlg005:1301"/>
       <word id="10" form="καὶ" lemma="καί" postag="c--------" head="11" relation="AuxZ" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
       <word id="11" form="τοὐμὸν" lemma="ἐμός" postag="a-s---nn-" head="12" relation="PNOM" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
-      <word id="12" form="ἔσται" lemma="εἰμί" postag="v3sfi----" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
+      <word id="12" form="ἔσται" lemma="εἰμί" postag="v3sfim---" head="0" relation="PRED" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
       <word id="13" form="τῇδ'" lemma="τῇδε" postag="d--------" head="12" relation="ADV" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
       <word id="14" form="·" lemma="·" postag="u--------" head="0" relation="AuxK" cite="urn:cts:greekLit:tlg0011.tlg005:1302"/>
       <word id="15" insertion_id="0014e" form="[0]" artificial="elliptic" head="6" relation="ATR"/>
