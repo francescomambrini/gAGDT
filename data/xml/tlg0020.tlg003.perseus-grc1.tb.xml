@@ -3925,7 +3925,7 @@
       <word id="11" form="δ'" lemma="δέ" postag="g--------" head="0" relation="COORD" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
       <word id="12" form="εὖ" lemma="εὖ" postag="d--------" head="14" relation="ADV" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
       <word id="13" form="μάλα" lemma="μάλα" postag="d--------" head="12" relation="AuxZ" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
-      <word id="14" form="οἶσθα" lemma="εἴδω" postag="v2sria---" head="11" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
+      <word id="14" form="οἶσθα" lemma="εἶδον" postag="v2sria---" head="11" relation="PRED_CO" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
       <word id="15" form="καὶ" lemma="καί" postag="d--------" head="16" relation="AuxZ" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
       <word id="16" form="αὐτός" lemma="αὐτός" postag="a-s---mn-" head="10" relation="ATV" cite="urn:cts:greekLit:tlg0020.tlg003:1.355"/>
       <word id="17" form="·" lemma="·" postag="u--------" head="0" relation="AuxK" cite=""/>
